@@ -72,7 +72,18 @@ export function Footer() {
       </p>
 
       <div className={styles.bottom}>
-        <p>{content.footer.copyright}</p>
+        <p>
+          © {new Date().getFullYear()}{" "}
+          <a
+            className={styles.credit}
+            href={site.credit.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {site.credit.name}
+          </a>
+          . Tüm hakları saklıdır.
+        </p>
         <a
           href={site.instagram.url}
           target="_blank"

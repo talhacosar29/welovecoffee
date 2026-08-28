@@ -61,6 +61,5 @@ export const content = {
   },
   footer: {
     blurb: "İstanbul’da kahve, lezzet ve iyi anlar.",
-    copyright: `© ${new Date().getFullYear()} We Love Coffee. Tüm hakları saklıdır.`,
   },
 } as const;

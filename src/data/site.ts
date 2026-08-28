@@ -19,6 +19,10 @@ export const site = {
   },
   email: "", // PLACEHOLDER: add a public email when available
   city: "İstanbul",
+  credit: {
+    name: "Godicsoft",
+    url: "https://godicsoft.com",
+  },
 } as const;
 
 export const nav = [
