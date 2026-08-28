@@ -1,0 +1,151 @@
+.intro {
+  padding-top: 6.5rem;
+}
+
+.introGrid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 4rem 6rem;
+  align-items: end;
+}
+
+.introGrid h2 {
+  font-size: clamp(3.4rem, 8vw, 7.4rem);
+  max-width: 10ch;
+}
+
+.introGrid p {
+  font-size: 1.08rem;
+  color: var(--muted);
+  max-width: 34rem;
+}
+
+.introCta {
+  margin-top: 1.8rem;
+}
+
+.photoBand {
+  display: grid;
+  grid-template-columns: 1.6fr 0.9fr;
+  gap: 1.1rem;
+  width: min(100% - 2.5rem, var(--container-wide));
+  margin: 0 auto 5rem;
+  align-items: end;
+}
+
+.photoMain {
+  aspect-ratio: 16 / 11;
+}
+
+.photoSide {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.photoSide > div {
+  aspect-ratio: 4 / 5;
+  margin-top: -18%;
+}
+
+.photoSide p {
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.centerCta {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.ritual {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  min-height: 80vh;
+  padding: 0;
+}
+
+.ritualMedia {
+  min-height: 420px;
+}
+
+.ritualCopy {
+  display: grid;
+  align-content: center;
+  padding: clamp(2rem, 6vw, 5rem);
+}
+
+.ritualCopy h2 {
+  font-size: var(--display-sm);
+  margin: 0.8rem 0 1.1rem;
+}
+
+.ritualCopy p:not(.kicker) {
+  color: rgba(245, 241, 234, 0.7);
+  max-width: 28rem;
+  margin-bottom: 1.8rem;
+}
+
+.locs {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1.2rem;
+}
+
+.loc a {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.loc:last-child {
+  margin-top: 4.5rem;
+}
+
+.locMedia {
+  aspect-ratio: 4 / 5;
+}
+
+.loc h3 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.loc p {
+  color: var(--muted);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.insta {
+  padding-top: 0;
+}
+
+@media (max-width: 900px) {
+  .introGrid,
+  .photoBand,
+  .ritual,
+  .locs {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .photoSide > div {
+    margin-top: 0;
+    aspect-ratio: 16 / 10;
+  }
+
+  .loc:last-child {
+    margin-top: 0;
+  }
+
+  .photoBand,
+  .intro {
+    width: auto;
+  }
+
+  .photoBand {
+    width: min(100% - 1.5rem, var(--container-wide));
+  }
+}

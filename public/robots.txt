@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://talhacosar29.github.io/welovecoffee/sitemap.xml

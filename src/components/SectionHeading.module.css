@@ -1,0 +1,25 @@
+.wrap {
+  max-width: 38rem;
+  margin-bottom: var(--space-7);
+}
+
+.center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.title {
+  font-size: var(--display-sm);
+  margin-top: 0.85rem;
+}
+
+.body {
+  margin-top: 1.1rem;
+  color: var(--muted);
+  font-size: 1.02rem;
+  max-width: 32rem;
+}
+
+.center .body {
+  margin-inline: auto;
+}

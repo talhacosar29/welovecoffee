@@ -1,0 +1,38 @@
+.wrap {
+  overflow: hidden;
+  background: var(--espresso);
+  color: var(--cream);
+  border-block: 1px solid var(--line-light);
+  padding: 1.1rem 0;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: slide 36s linear infinite;
+  font-family: var(--font-serif);
+  font-size: clamp(1.4rem, 3vw, 2.1rem);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.track span {
+  padding-right: 0.35rem;
+}
+
+.track i {
+  font-style: normal;
+  color: var(--caramel);
+  padding: 0 0.9rem;
+}
+
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+  }
+}

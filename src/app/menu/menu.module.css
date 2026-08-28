@@ -1,0 +1,19 @@
+.page {
+  padding: calc(var(--header-h) + 3.5rem) 0 6rem;
+  background: var(--cream);
+}
+
+.hero {
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+  font-size: var(--display-sm);
+  max-width: 14ch;
+  margin: 0.8rem 0 1rem;
+}
+
+.hero p:not(.kicker) {
+  max-width: 32rem;
+  color: var(--muted);
+}
